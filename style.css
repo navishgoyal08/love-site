@@ -1,25 +1,53 @@
-body{
+body {
     background-color: pink;
     text-align: center;
 }
 
-button{
+button {
     background-color: rgb(112, 200, 235);
     font-size: 50px;
     text-decoration: none;
-    
 }
 
-p{
+p {
     font-size: 30px;
-    color:rgb(207, 12, 45)
+    color: rgb(207, 12, 45);
 }
 
-h1{
+h1 {
     color: red;
     font-size: 60px;
-    font-family:cursive;
+    font-family: cursive;
 }
-button:hover{
+
+button:hover {
     background-color: red;
+}
+
+/* Media Query for Tablets (Landscape and Portrait) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Smaller font for tablets */
+    }
+    p {
+        font-size: 25px; /* Slightly smaller font for paragraphs */
+    }
+    button {
+        font-size: 40px; /* Make button text smaller */
+        padding: 15px 30px; /* Adjust padding for a better look */
+    }
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px; /* Make h1 smaller for phones */
+    }
+    p {
+        font-size: 20px; /* Smaller paragraph text */
+    }
+    button {
+        font-size: 30px; /* Smaller button text */
+        padding: 12px 25px; /* Adjust padding to fit smaller screen */
+    }
 }
